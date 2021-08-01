@@ -1,0 +1,27 @@
+.editor a {
+  color: var(--chakra-colors-orange-500);
+  cursor: pointer;
+}
+
+.ProseMirror {
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: 15rem;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: "What's happening...";
+  float: left;
+  color: #ced4da;
+  pointer-events: none;
+  height: 0;
+  font-weight: 500;
+}
