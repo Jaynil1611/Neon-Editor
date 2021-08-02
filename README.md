@@ -1,7 +1,7 @@
 # Neon-Editor
 Neon Editor is a rich text editor offering various functionalities to edit text, add links, images &amp; memes as well
 
-View Neon Editor here: 
+View Neon Editor here: https://neon-editor.vercel.app/
 
 # Tech Stack
 1. React JS
@@ -10,6 +10,7 @@ View Neon Editor here:
 1. TipTap JS Editor
 
 # Live Demo
+https://user-images.githubusercontent.com/48921037/127806875-4f53433b-780c-409f-9cc2-71ee629ba505.mp4
 
 # Usage
 - ###  Bold Styling
