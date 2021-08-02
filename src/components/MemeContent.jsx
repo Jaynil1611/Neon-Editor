@@ -22,9 +22,13 @@ function MemeContent({ editor }) {
       const results = editorContent.match(/\{\{(.+?)_meme\}\}/);
       if (!results) return;
       const [text, query] = results;
+      console.log(results);
       const { memeURL } = await fetchMemeFromApi(query);
       if (memeURL && query) {
         editorContent = editorContent.replace(text, "");
+        editorContent = editorContent.concat(
+          `<img height="50" src=${memeURL} />`
+        );
         editor.commands.setContent(editorContent);
         editor.chain().focus().setImage({ src: memeURL }).run();
       }

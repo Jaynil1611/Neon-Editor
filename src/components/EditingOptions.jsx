@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
+import Help from "./Help";
 import Hyperlink from "./Hyperlink";
 import ImageContent from "./ImageContent";
 import MemeContent from "./MemeContent";
@@ -24,6 +25,7 @@ function EditingOptions({ editor }) {
           <Hyperlink editor={editor} />
           <ImageContent editor={editor} />
           <MemeContent editor={editor} />
+          <Help />
         </Flex>
       </Flex>
     </>
