@@ -1,8 +1,6 @@
 import React from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import Highlight from "@tiptap/extension-highlight";
-import Typography from "@tiptap/extension-typography";
 import Placeholder from "@tiptap/extension-placeholder";
 import Link from "@tiptap/extension-link";
 import Underline from "@tiptap/extension-underline";
@@ -12,15 +10,7 @@ import { Box, Flex, Image as DisplayImage, Text } from "@chakra-ui/react";
 
 function Home() {
   const editor = useEditor({
-    extensions: [
-      StarterKit,
-      Underline,
-      Link,
-      Image,
-      Placeholder,
-      Highlight,
-      Typography,
-    ],
+    extensions: [StarterKit, Underline, Link, Image, Placeholder],
     autofocus: "end",
   });
 
